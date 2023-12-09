@@ -10,6 +10,6 @@
 
 	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.Address" name="address" p:hno="10" p:street="Thiru Vi Ka road" p:city="chennai" />
 	
-	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.Employee" name="employee" autowire="byName" />
+	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.Employee" name="employee" autowire="constructor" />
 	
 </beans>

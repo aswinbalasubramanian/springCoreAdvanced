@@ -2,6 +2,10 @@ package com.aswin.spring.springCoreAdvanced.autowiring;
 
 public class Employee {
 
+	public Employee(Address address) {
+		this.address = address;
+	}
+
 	public Address getAddress() {
 		return address;
 	}
