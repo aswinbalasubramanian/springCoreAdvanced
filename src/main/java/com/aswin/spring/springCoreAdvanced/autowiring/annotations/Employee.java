@@ -6,17 +6,13 @@ public class Employee {
 
 	private Address address;
 
+	@Autowired
 	public Employee(Address address) {
 		this.address = address;
 	}
 
 	public Address getAddress() {
 		return address;
-	}
-
-	@Autowired
-	public void setAddress(Address address) {
-		this.address = address;
 	}
 
 	@Override
