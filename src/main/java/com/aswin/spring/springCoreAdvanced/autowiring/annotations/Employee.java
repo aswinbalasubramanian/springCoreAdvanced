@@ -1,15 +1,12 @@
 package com.aswin.spring.springCoreAdvanced.autowiring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
-
+	@Autowired(required = false)
+	@Qualifier("address456")
 	private Address address;
-
-	@Autowired
-	public Employee(Address address) {
-		this.address = address;
-	}
 
 	public Address getAddress() {
 		return address;

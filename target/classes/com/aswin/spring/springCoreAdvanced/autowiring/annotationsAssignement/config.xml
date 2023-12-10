@@ -10,9 +10,9 @@
 
 	<context:annotation-config />
 	
-	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotations.Address" name="address123" p:hno="10" p:street="Thiru Vi Ka road" p:city="chennai" />
-	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotations.Address" name="address456" p:hno="10" p:street="TTK road" p:city="Tiruvallur" />
+	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotationsAssignement.Reservation" name="reserve123" p:id="10" p:time="05.26 am"  />
+	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotationsAssignement.Reservation" name="reserve456" p:id="15" p:time="06.26 am"  />
 	
-	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotations.Employee" name="employee" />
+	<bean class="com.aswin.spring.springCoreAdvanced.autowiring.annotationsAssignement.Customer" name="customer" />
 	
 </beans>
