@@ -20,9 +20,13 @@ public class Instructor {
 	@Autowired
 	private Profile profile;
 
+	@Value("#{3+4>8?true:false}")
+	private boolean active;
+
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", topics=" + topics + ", profile=" + profile + ", name=" + name + "]";
+		return "Instructor [id=" + id + ", topics=" + topics + ", profile=" + profile + ", active=" + active + ", name="
+				+ name + "]";
 	}
 
 	@Value("Ultimate Warrior")
@@ -42,5 +46,13 @@ public class Instructor {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 }

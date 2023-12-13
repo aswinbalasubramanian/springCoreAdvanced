@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 public class Profile {
 	@Value("Software Developer - 2")
 	private String title;
-	@Value("#{'Amazon US'}")
+	
+	@Value("#{new java.lang.String('Amazon India')}")
 	private String company;
 
 	@Override
