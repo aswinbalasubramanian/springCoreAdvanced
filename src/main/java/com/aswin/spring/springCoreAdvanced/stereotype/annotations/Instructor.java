@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Instructor {
 
-	@Value("#{new Integer(99)}")
+	@Value("#{T(java.lang.Integer).MIN_VALUE}")
 	private int id = 10;
 
 	@Value("#{topics}")
