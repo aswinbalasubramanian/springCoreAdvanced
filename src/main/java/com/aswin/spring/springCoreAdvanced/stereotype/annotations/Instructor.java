@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Instructor {
 
-	@Value("#{66+44}")
+	@Value("#{T(java.lang.Math).abs(-99)}")
 	private int id = 10;
 
 	@Value("#{topics}")
