@@ -13,8 +13,10 @@
 
 	<bean class="com.aswin.spring.springCoreAdvanced.injecting.interfaces.OrderDAOImpl" name="dao" />
 	
+	<bean class="com.aswin.spring.springCoreAdvanced.injecting.interfaces.OrderDAOImpl2" name="dao2" />
+	
 	<bean class="com.aswin.spring.springCoreAdvanced.injecting.interfaces.OrderBOImpl" name="bo">
-		<property name="dao" ref="dao" />
+		<property name="dao" ref="dao2" />
 	</bean> 
 	
 </beans>
