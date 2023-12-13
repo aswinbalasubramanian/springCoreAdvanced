@@ -2,6 +2,7 @@ package com.aswin.spring.springCoreAdvanced.stereotype.annotations;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -16,9 +17,12 @@ public class Instructor {
 	@Value("#{topics}")
 	private List<String> topics;
 
+	@Autowired
+	private Profile profile;
+
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", topics=" + topics + ", name=" + name + "]";
+		return "Instructor [id=" + id + ", topics=" + topics + ", profile=" + profile + ", name=" + name + "]";
 	}
 
 	@Value("Ultimate Warrior")
